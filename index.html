@@ -5,11 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Response</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div></div>
+    <div class="main-container">
+        <div class="banner d-flex justify-content-between align-items-center w-100">
+            <div class="banner-title d-inline-flex flex-column">
+                <span>Survey Response</span>
+                <div class="survey-title d-inline-block">
+                    <span class="border-3 border-end fw-semibold fs-lg-16 fs-xl-18 fs-xxl-18">MEM-0001</span><span class="fw-semibold fs-lg-16 fs-xl-18 fs-xxl-18">Survey 1</span>
+                </div>
+            </div>
+            <button type="button" class="btn btn-light download-btn d-flex align-items-center">
+                <i class="bi bi-filetype-pdf"></i>
+                <span class="fs-lg-12 fs-xl-14 fs-xxl-14">PDF Download</span>
+            </button>
+        </div>
+        <div id="section-1" class="section d-flex flex-column border-bottom">
+            <span class="section-head align-self-center fs-lg-14 fs-xl-16 fs-xxl-16">Validated Field Response</span>
+            <div class="section-content">
+                <div id="field-1" class="field d-flex align-items-center">
+                    <span class="flex-shrink-0 me-2 fs-lg-12 fs-xl-14 fs-xxl-14">Phone</span>
+                    <span class="border rounded-pill fs-lg-12 fs-xl-14 fs-xxl-14">Match</span>
+                </div>
+                <div id="field-2" class="field d-flex align-items-center">
+                    <span class="flex-shrink-0 me-2 fs-lg-12 fs-xl-14 fs-xxl-14">Address</span>
+                    <span class="border rounded-pill fs-lg-12 fs-xl-14 fs-xxl-14">Partial Match</span>
+                </div>
+                <div id="field-3" class="field d-flex align-items-center">
+                    <span class="flex-shrink-0 me-2 fs-lg-12 fs-xl-14 fs-xxl-14">Email</span>
+                    <span class="border rounded-pill fs-lg-12 fs-xl-14 fs-xxl-14">No Match</span>
+                </div>
+            </div>
+        </div>
+        <div id="section-2" class="section d-flex flex-column border-bottom">
+            <span class="section-head align-self-center fs-lg-14 fs-xl-16 fs-xxl-16">Yes or No Type Response</span>
+            <div class="section-content">
+                <div id="field-1" class="field d-flex align-items-center">
+                    <span class="flex-shrink-0 me-2 fs-lg-12 fs-xl-14 fs-xxl-14">Is your salary greater than 1,00,000?</span>
+                    <div class="toggle-button-container">
+                        <input type="checkbox" class="switch border border-2" id="toggle-button" checked>
+                    </div>
+                </div>
+                <div id="field-2" class="field d-flex align-items-center">
+                    <span class="flex-shrink-0 me-2 fs-lg-12 fs-xl-14 fs-xxl-14">Do you have a Passport?</span>
+                    <div class="toggle-button-container">
+                        <input type="checkbox" class="switch border border-2" id="toggle-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section-3" class="section d-flex flex-column border-bottom">
+            <span class="section-head align-self-center fs-lg-14 fs-xl-16 fs-xxl-16">Multichoice Response</span>
+            <div class="section-content">
+                <div id="field-1" class="field d-flex flex-column">
+                    <span class="fs-lg-12 fs-xl-14 fs-xxl-14">Types of currencies you have</span>
+                    <span class="border border-2 rounded-pill align-self-start fs-lg-12 fs-xl-14 fs-xxl-14">American Dollar</span>
+                    <span class="border border-2 rounded-pill align-self-start fs-lg-12 fs-xl-14 fs-xxl-14">Indian Rupee</span>
+                </div>
+                <div id="field-2" class="field d-flex flex-column">
+                    <span class="fs-lg-12 fs-xl-14 fs-xxl-14">Places you would like to visit</span>
+                    <span class="border border-2 rounded-pill align-self-start fs-lg-12 fs-xl-14 fs-xxl-14">Chennai</span>
+                </div>
+            </div>
+        </div>
+        <div id="section-4" class="section d-flex flex-column border-bottom">
+            <span class="section-head align-self-center fs-lg-14 fs-xl-16 fs-xxl-16">Single Choice Response</span>
+            <div class="section-content">
+                <div id="field-1" class="field d-flex">
+                    <span class="flex-shrink-0 me-2 fs-lg-12 fs-xl-14 fs-xxl-14">Select a reason</span>
+                    <span class="fs-lg-12 fs-xl-14 fs-xxl-14">Lobortis</span>
+                </div>
+                <div id="field-2" class="field d-flex">
+                    <span class="flex-shrink-0 me-2 fs-lg-12 fs-xl-14 fs-xxl-14">Select another reason</span>
+                    <span class="fs-lg-12 fs-xl-14 fs-xxl-14">Pulvinar tincidunt</span>
+                </div>
+            </div>
+        </div>
+        <div id="section-5" class="section d-flex flex-column border-bottom">
+            <span class="section-head align-self-center fs-lg-14 fs-xl-16 fs-xxl-16">Free Text Response</span>
+            <div class="section-content">
+                <div id="field-1" class="field d-flex">
+                    <span class="flex-shrink-0 me-2 fs-lg-12 fs-xl-14 fs-xxl-14">What's your thought?</span>
+                    <span class="fs-lg-12 fs-xl-14 fs-xxl-14">Aliquet ornare sed velit nunc.</span>
+                </div>
+                <div id="field-2" class="field d-flex">
+                    <span class="flex-shrink-0 me-2 fs-lg-12 fs-xl-14 fs-xxl-14">What's your feedback?</span>
+                    <span class="fs-lg-12 fs-xl-14 fs-xxl-14">Nisl gravida in sed leo id elit viverra.</span>
+                </div>
+            </div>
+        </div>
+        <div id="page-end"></div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

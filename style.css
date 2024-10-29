@@ -1,0 +1,253 @@
+.main-container .banner {
+    padding: 0 24px;
+    height: 104px;
+    background-image: linear-gradient(to right, #4CC9F0, #0077B6);
+}
+
+.main-container .banner span, .main-container .section span {
+    font-family: "Poppins";
+}
+
+.main-container .banner .banner-title>span {
+    font-size: 24px;
+    color: var(--primary-blue);
+}
+
+.main-container .banner .banner-title .survey-title {
+    margin-top: 16px;
+}
+
+.main-container .banner .banner-title .survey-title>span {
+    color: var(--tertiary-blue);
+}
+
+.main-container .banner .banner-title .survey-title span:first-child {
+    padding-right: 6px;
+    border-color: var(--tertiary-blue) !important;
+}
+
+.main-container .banner .banner-title .survey-title span:last-child {
+    padding-left: 6px;
+}
+
+.main-container .banner .download-btn {
+    background-color: var(--tertiary-blue) !important;
+    border-color: var(--tertiary-blue) !important;
+}
+
+.main-container .banner .download-btn:hover {
+    background-color: var(--hover-blue) !important;
+    border-color: var(--hover-blue)!important;
+}
+
+.main-container .banner .download-btn>span {
+    color: var(--primary-blue);
+    margin-left: 8px;
+}
+
+.main-container .banner .download-btn>i {
+    color: var(--primary-blue);
+}
+
+.main-container .section {
+    margin: 0 24px;
+    padding: 8px 0;
+    border-color: var(--tertiary-blue) !important;
+}
+
+.main-container .section:last-child {
+    border: none !important;
+}
+
+.main-container .section>.section-head {
+    line-height: 150%;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.main-container .section .section-content {
+    margin-top: 16px;
+}
+
+.main-container .section .section-content>.field:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.main-container .section .section-content>.field>span:first-child {
+    color: var(--primary-blue);
+}
+
+.main-container #section-1 .section-content>.field>span:first-child {
+    width: 10vw;
+}
+
+.main-container #section-1 .field span:last-child, .main-container #section-3 .field span:not(:first-child) {
+    padding: 5px 10px;
+}
+
+.main-container #section-1 #field-1 span:last-child {
+    border-color: var(--primary-green) !important;
+    color: var(--secondary-green);
+    background-color: var(--tertiary-green);
+}
+
+.main-container #section-1 #field-2 span:last-child {
+    border-color: var(--primary-yellow) !important;
+    color: var(--secondary-yellow);
+    background-color: var(--tertiary-yellow);
+}
+
+.main-container #section-1 #field-3 span:last-child {
+    border-color: var(--primary-red) !important;
+    color: var(--secondary-red);
+    background-color: var(--tertiary-red);
+}
+
+.main-container .section .section-content>.field>span:first-child {
+    width: 25vw;
+}
+
+/* Toggle switch start */
+.main-container #section-2 .section-content .switch {
+    cursor: pointer;
+    /*margin: 1rem auto;*/
+    position: relative;
+    width: 40px;
+    height: 24px;
+    border-color: var(--primary-red) !important;
+    border-radius: 25px;
+    outline: none;
+    background-color: #FFFFFF;
+    -webkit-appearance: none;
+	appearance: none;
+    transition: background .3s;
+}
+
+.main-container #section-2 .section-content .switch::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: var(--primary-red);
+    transition: left .3s;
+}
+
+.main-container #section-2 .section-content .switch:checked {
+    border-color: var(--primary-green) !important;
+}
+
+.main-container #section-2 .section-content .switch:checked::after {
+    left: 73%;
+    background-color: var(--primary-green);
+}
+/* Toggle switch end */
+
+.main-container #section-3 .section-content>.field>span:first-child {
+    width: unset;
+}
+
+.main-container #section-3 .section-content>.field>span:not(:first-child) {
+    border-color: var(--secondary-blue) !important;
+    color: var(--secondary-blue);
+    margin-top: 8px;
+}
+
+.main-container #section-4 .section-content>.field>span:last-child, .main-container #section-5 .section-content>.field>span:last-child {
+    color: var(--secondary-blue);
+}
+
+.main-container #page-end {
+    height: 16px;
+    background-image: linear-gradient(to left, #4CC9F0, #0077B6);
+}
+
+@media (min-width: 1400px) {
+    .main-container .section {
+        margin: 0 192px;
+    }
+    .main-container .banner {
+        padding: 0 192px;
+    }
+    .fs-xxl-14 {
+        font-size: 14px;
+    }
+    .fs-xxl-16 {
+        font-size: 16px;
+    }
+    .fs-xxl-18 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .main-container .section {
+        margin: 0 96px;
+    }
+    .main-container .banner {
+        padding: 0 96px;
+    }
+    .fs-xl-14 {
+        font-size: 14px;
+    }
+    .fs-xl-16 {
+        font-size: 16px;
+    }
+    .fs-xl-18 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .main-container .section .section-content>.field>span:first-child {
+        width: 30vw;
+    }
+    .main-container #section-1 .section-content>.field>span:first-child {
+        width: 15vw;
+    }
+    .main-container .section {
+        margin: 0 48px;
+    }
+    .main-container .banner {
+        padding: 0 48px;
+    }
+    .fs-lg-12 {
+        font-size: 12px;
+    }
+    
+    .fs-lg-14 {
+        font-size: 14px;
+    }
+    
+    .fs-lg-16 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-container .section .section-content>.field>span:first-child {
+        width: 35vw;
+    }
+    .main-container #section-1 .section-content>.field>span:first-child {
+        width: 20vw;
+    }
+}
+
+:root {
+    --primary-blue: #000293;
+    --secondary-blue: #4CC9F0;
+    --tertiary-blue: #CAF0F8;
+    --hover-blue: #90e0ef;
+    --primary-green: #7BF1A8;
+    --secondary-green: #00D853;
+    --tertiary-green: #D0FAE6;
+    --primary-red: #FF8D91;
+    --secondary-red: #FF7277;
+    --tertiary-red: #FDE3E4;
+    --primary-yellow: #FFCC75;
+    --secondary-yellow: #FFB638;
+    --tertiary-yellow: #FFF4E1;
+}
